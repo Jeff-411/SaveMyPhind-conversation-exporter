@@ -1,3 +1,12 @@
+# Pandoc
+_dev
+_X*.*
+*.text
+.vscode
+z______TEMP______.md
+z_downloads
+markdown.css
+
 ### https://raw.github.com/github/gitignore/18654b47c86bef38add5cd091ec2dac7d6e6e37b/Node.gitignore
 lib
 
