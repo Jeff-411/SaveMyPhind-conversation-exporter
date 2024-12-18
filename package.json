@@ -11,7 +11,10 @@
     "markdown",
     "webextension"
   ],
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
     "build:chrome": "cross-env TARGET=chrome APP_MODE=dev node esbuild.config.js",
     "build:firefox": "cross-env TARGET=firefox APP_MODE=dev node esbuild.config.js",
     "dev:chrome": "cross-env TARGET=chrome APP_MODE=dev WATCH_MODE=true node esbuild.config.js",
@@ -33,14 +36,19 @@
     "esbuild": "^0.23.1",
     "jsdom": "^25.0.0",
     "lit": "^3.2.0",
+    "nodemon": "^3.1.9",
     "typescript": "^5.5.4",
     "vitest": "^2.0.5"
   },
   "dependencies": {
     "@shoelace-style/shoelace": "^2.16.0",
-    "dompurify": "^3.1.6",
+    "cors": "^2.8.5",
+    "dompurify": "^3.2.3",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
     "js-yaml": "^4.1.0",
     "showdown": "^2.1.0",
-    "turndown": "^7.2.0"
+    "turndown": "^7.2.0",
+    "uuid": "^11.0.3"
   }
 }
